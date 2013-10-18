@@ -1,13 +1,150 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
+/* @license
+ * MyFonts Webfont Build ID 2559786, 2013-05-19T20:57:07-0400
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
  *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
+ * You may obtain a valid license at the URLs below.
  *
- *= require_self
- *= require_tree .
- */
+ * Webfont: Code Pro Light Demo by Fontfabric
+ * URL: http://www.myfonts.com/fonts/font-fabric/code-pro/light-demo/
+ * Copyright: Copyright (c) 2010 by Svetoslav Simov. All rights reserved.
+ * Licensed pageviews: Unlimited
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2559786
+ *
+ * © 2013 MyFonts Inc
+*/
+
+
+body {
+	background-color: #E9AF32;
+	margin: 0;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+font-family: 'Josefin Sans', sans-serif !important;
+font-weight: 400;
+font-style: normal;
+color: #2C0402 !important;
+text-rendering: optimizeLegibility;
+line-height: 1.1;
+margin-bottom: 14px;
+margin-top: 14px;
+}
+
+hr {
+	border-top: 1px solid #2C0402 !important;
+	border-bottom: 1px solid #2C0402 !important;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 44px;
+	display: block;
+	text-align: center;
+	margin: 20% 0 3%;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+p {
+	font-size: 22px;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	margin-bottom: 7%;
+	line-height: 150%
+}
+
+.row mobile {
+	width:25%;
+	float:left;
+}
+
+div#bio {
+	background-color: #E9AF32;
+	width: 45%;
+	height: auto;
+	float: right;
+}
+
+div#portrait-desktop {
+	width: 55%;
+	height: auto;
+	float: left;
+	position:fixed;
+}
+
+img.half {
+	height: auto;
+}
+
+img.full {
+	width: 100%;
+	height: auto;
+}
+
+.centered {
+	width: 65%;
+	float: none;
+	margin: 10% auto;
+}
+
+div#recent h1 {
+	margin: 20% 0 3%;
+}
+
+.centered-logos {
+	width: 100%;
+	float: none;
+	margin: 10% auto;
+}
+
+.logos div a {
+	margin: 10px 0 40px 10%;
+	width: 20%;
+	float: left;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* Portrait tablet to landscape, desktop, and large desktop */
+@media (min-aspect-ratio: 1181/679) {
+	div#portrait-mobile {
+		display: none;
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-aspect-ratio: 1181/679) {
+	div#bio {
+		background-color: #E9AF32;
+		width: 100%;
+	}
+
+	div#portrait-desktop {
+		display: none;
+	}
+}
+
+link.favicon {
+	display:block;
+}
+
+p a {
+	color: #FFF8DC;
+	text-decoration: none;
+}

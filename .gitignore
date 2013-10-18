@@ -13,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore secret token
+/config/initializers/secret_token.rb
+
+# Ignore index view
+app/views/ember/_bio.html.erb
+
+# Ignore image assets
+public/*

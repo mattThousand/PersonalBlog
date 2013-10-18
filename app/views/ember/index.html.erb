@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= stylesheet_link_tag :application, media: :all %>
+    <%= javascript_include_tag :application %>
+    <meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+    <title>Matt Buckley</title>
+  </head>
+  <body>
+    <div id="ember"></div>
+
+
+    <script type="text/x-handlebars" data-template-name="index">
+    	<%= render partial: 'bio' %>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="blog/index">
+			<%= render partial: 'blog_entries'%>
+		</script>
+
+
+  </body>
+</html>
+
