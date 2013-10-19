@@ -1,0 +1,21 @@
+<div id="portrait-mobile">
+	<div class="row-fluid">
+		<img class = "full" alt="half" src="../desert_pic_2.jpg">
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="entries-index" class="desktop-only">
+		<h1>titles</h1>
+		{{#each entry in controller}}
+			{{#linkTo 'entry' entry}}{{ entry.id }}{{/linkTo}}
+		{{/each}}
+	</div>
+	<div class="entries-container">
+		<div class="centered">
+			{{outlet}}
+			<%= render partial: 'testing_http_requests' %>
+			{{partial 'comments/form'}}
+			<a href="#" {{action 'showAllComments'}}>Show All Comments</a>
+		</div>
+	</div>
+</div>			

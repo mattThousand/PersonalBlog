@@ -15,9 +15,21 @@
     	<%= render partial: 'bio' %>
 		</script>
 
-		<script type="text/x-handlebars" data-template-name="blog/index">
-			<%= render partial: 'blog_entries'%>
+		<script type="text/x-handlebars" data-template-name="entries">
+			<%= render partial: 'entries'%>
 		</script>
+
+    <script type="text/x-handlebars" data-template-name="entries/show">
+
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="comments/new">
+      {{partial 'comments/form'}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="comments/form">
+      <%= render partial: 'comment_form' %>
+    </script>
 
 
   </body>

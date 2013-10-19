@@ -15,6 +15,7 @@ group :development, :test do
   gem 'qunit-rails' 
   gem 'pry'
   gem 'jasmine'
+  gem 'shoulda-matchers'
 end
 
 # Gems used only for assets and not required

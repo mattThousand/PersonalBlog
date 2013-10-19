@@ -3,15 +3,17 @@ Blog.Router.reopen({
 	location: 'history'
 });
 
-Blog.BlogIndexRoute = Ember.Route.extend({
+Blog.EntriesRoute = Ember.Route.extend({
 	activate: function() {
 		window.scrollTo(0,0);
 	}
 });
 
 Blog.Router.map(function() {
-	this.resource('blog', function() {
-		this.route('index');
+	this.resource('entries', function() {
+		this.resource('entry', function() {
+			this.route('show');
+		});
 	});
 });
 
@@ -20,5 +22,3 @@ Blog.Router.map(function() {
 		this.route('index');
 	});
 });
-
-

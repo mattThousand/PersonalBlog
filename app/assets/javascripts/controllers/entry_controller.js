@@ -1,0 +1,1 @@
+Blog.EntryController = Ember.ObjectController.extend({});

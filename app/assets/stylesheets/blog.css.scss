@@ -1,0 +1,179 @@
+
+body {
+	background-color: #E9AF32;
+	margin: 0;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+font-family: 'Josefin Sans', sans-serif !important;
+font-weight: 400;
+font-style: normal;
+color: #2C0402;
+text-rendering: optimizeLegibility;
+line-height: 1.1;
+margin-bottom: 14px;
+margin-top: 14px;
+}
+
+hr {
+	border-top: 1px solid #2C0402 !important;
+	border-bottom: 1px solid #2C0402 !important;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 44px;
+	display: block;
+	text-align: center;
+	margin: 20% 0 3%;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+p {
+	font-size: 22px;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	margin-bottom: 7%;
+	line-height: 150%
+}
+
+.row mobile {
+	width:25%;
+	float:left;
+}
+
+div#bio {
+	background-color: #E9AF32;
+	width: 45%;
+	height: auto;
+	float: right;
+}
+
+div#portrait-desktop {
+	width: 55%;
+	height: auto;
+	float: left;
+	position:fixed;
+}
+
+img.half {
+	height: auto;
+}
+
+img.full {
+	width: 100%;
+	height: auto;
+}
+
+.centered {
+	width: 65%;
+	float: none;
+	margin: 10% auto;
+}
+
+div#recent h1 {
+	margin: 20% 0 3%;
+}
+
+.centered-logos {
+	width: 100%;
+	float: none;
+	margin: 10% auto;
+}
+
+.logos div a {
+	margin: 10px 0 40px 10%;
+	width: 20%;
+	float: left;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* Portrait tablet to landscape, desktop, and large desktop */
+@media (min-aspect-ratio: 1181/679) {
+	div#portrait-mobile {
+		display: none;
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-aspect-ratio: 1181/679) {
+	div#bio {
+		background-color: #E9AF32;
+		width: 100%;
+	}
+
+	div#portrait-desktop {
+		display: none;
+	}
+}
+
+link.favicon {
+	display:block;
+}
+
+p a, a {
+	color: #FFF8DC;
+	text-decoration: none;
+}
+
+p.date {
+	color: #2C0402;
+	text-align: center;
+	font-size: 15px;
+}
+
+.form-control {
+	border: 2px solid #2C0402;
+	color: #34495e;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	padding: 8px 12px;
+	height: 41px;
+	-webkit-appearance: none;
+	border-radius: 6px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	-moz-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	-o-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
+	-webkit-backface-visibility: hidden;
+}
+
+textarea {
+	background-color: #E9AF32;
+	width: 100%;
+}
+
+textarea:focus {
+	outline: none !important;
+}
+
+.entries-index {
+	width: 35%;
+	height: 100%;
+	border-right: 8px solid;
+	float: left;
+	position:fixed;
+}
+
+.entries-container {
+	background-color: #E9AF32;
+	width: 65%;
+	height: auto;
+	float: right;	
+}
