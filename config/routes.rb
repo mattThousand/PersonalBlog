@@ -11,7 +11,7 @@ Blog::Application.routes.draw do
     end
   end
 
-  resources :tweeters, except: [:edit],
+  resources :entries, only: [:index],
     constraints: FormatTest.new(:json)
 
   get '*foo', to: 'ember#index', constraints: FormatTest.new(:html)
@@ -20,4 +20,5 @@ Blog::Application.routes.draw do
       path = request.env["REQUEST_PATH"]
       path != "/qunit" && FormatTest.new(:html).matches?(request)
     }
+
 end
