@@ -17,10 +17,12 @@
 
 		<script type="text/x-handlebars" data-template-name="entries">
 			<%= render partial: 'entries'%>
-		</script>
+    </script>
 
-    <script type="text/x-handlebars" data-template-name="entries/show">
-
+    <script type="text/x-handlebars" data-template-name="entry">
+      <h1>{{title}}</h1>
+      {{partial 'comments/form'}}
+      <a href="#" {{action 'showAllComments'}}>Show All Comments</a>
     </script>
 
     <script type="text/x-handlebars" data-template-name="comments/new">
