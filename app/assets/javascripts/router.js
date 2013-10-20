@@ -3,17 +3,9 @@ Blog.Router.reopen({
 	location: 'history'
 });
 
-Blog.EntriesRoute = Ember.Route.extend({
-	activate: function() {
-		window.scrollTo(0,0);
-	}
-});
-
 Blog.Router.map(function() {
 	this.resource('entries', function() {
-		this.resource('entry', function() {
-			this.route('show');
-		});
+		this.resource('entry', {path: ':entry_id'});
 	});
 });
 
@@ -22,3 +14,16 @@ Blog.Router.map(function() {
 		this.route('index');
 	});
 });
+
+
+Blog.EntriesRoute = Ember.Route.extend({
+	activate: function() {
+		window.scrollTo(0,0);
+	},
+	model: function() {
+		return this.get('store').findAll('entry');
+	}
+});
+
+
+
