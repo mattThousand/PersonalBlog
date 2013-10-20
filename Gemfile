@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'zeus'
 gem 'thin'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'rspec-rails'
