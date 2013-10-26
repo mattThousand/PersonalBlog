@@ -5,7 +5,11 @@ Blog.Router.reopen({
 
 Blog.Router.map(function() {
 	this.resource('entries', function() {
-		this.resource('entry', {path: ':entry_id'});
+		this.resource('entry', {path: ':entry_id'}, function(){
+      this.resource('comments', function(){
+        this.resource('comment', {path: ':comment_id'})
+      });
+    });
 	});
 });
 

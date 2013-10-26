@@ -21,8 +21,7 @@
 
     <script type="text/x-handlebars" data-template-name="entry">
       <h1>{{title}}</h1>
-      {{partial 'comments/form'}}
-      <a href="#" {{action 'showAllComments'}}>Show All Comments</a>
+      {{{body}}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="comments/new">
@@ -30,7 +29,7 @@
     </script>
 
     <script type="text/x-handlebars" data-template-name="comments/form">
-      <%= render partial: 'comment_form' %>
+      <% render partial: 'comment_form' %>
     </script>
 
 

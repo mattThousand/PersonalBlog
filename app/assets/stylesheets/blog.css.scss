@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 font-family: 'Josefin Sans', sans-serif !important;
 font-weight: 400;
 font-style: normal;
-color: #2C0402;
+color: #2C0403;
 text-rendering: optimizeLegibility;
 line-height: 1.1;
 margin-bottom: 14px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 a.entry-title {
-	margin-left: 20%;
+	margin-left: 7%;
 }
 
 p {
@@ -191,4 +191,13 @@ textarea:focus {
 	width: 65%;
 	height: auto;
 	float: right;	
+}
+
+h3 a {
+  color: #2C0403;
+  font-size: 22px;
+  padding-bottom: 70px;
+  bottom: 0;
+  position: fixed;
+  margin-left: 15%;
 }

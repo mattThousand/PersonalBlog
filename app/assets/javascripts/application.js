@@ -15,9 +15,6 @@
 //= require vendor/ember-1.0.0.js
 //= require vendor/ember-data.js
 //= require blog.js
-//= require_tree ./routes
 //= require_tree ./controllers
 //= require_tree ./models
-//= require_tree ./views
-//= require_tree ./templates
 //= require_tree .
