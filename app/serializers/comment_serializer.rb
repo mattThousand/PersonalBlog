@@ -1,7 +1,6 @@
 class CommentSerializer < ActiveModel::Serializer
   attributes :id,
-    :first_name,
-    :last_name,
+    :name,
     :body,
     :entry_id 
 

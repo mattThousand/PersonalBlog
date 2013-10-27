@@ -1,4 +1,9 @@
-<form>
-	{{view Ember.TextArea valueBinding='body' classNames='comment-field form-control'}}
-	<a href='#' class='form-submit'>Post Comment</a>
+<form class="new-comment">
+	{{textarea value='your comment...' name='body' classNames='comment-field form-control' valueBinding='body'}}
+  <br/>
+  {{input value='your name...' name='name' classNames='name-field form-control' valueBinding='name'}}
+  <br/>
+  {{#view Blog.CommentSubmissionView}}
+    <a type="submit" href='#' class='comment-submit form-submit' {{action save}}>Post Comment</a>
+  {{/view}}
 </form>

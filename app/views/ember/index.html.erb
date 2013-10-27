@@ -22,10 +22,23 @@
     <script type="text/x-handlebars" data-template-name="entry">
       <h1>{{title}}</h1>
       {{{body}}}
+      <hr/>
+      {{#view Blog.LeaveACommentView}}
+        {{#if commentFormUntriggered}}
+          {{#linkTo 'comments.new' classNames='leave-a-comment'}}Leave a Comment{{/linkTo}}
+        {{/if}}
+      {{/view}}
+      {{outlet}}
+      <hr/>
+      {{#each comments}}
+        <p class="comment-author">{{name}} wrote:<p/>
+        <p class="comment">"{{body}}"</p>
+        <hr/>
+      {{/each}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="comments/new">
-      {{partial 'comments/form'}}
+      <%= render 'comment_form' %>
     </script>
 
     <script type="text/x-handlebars" data-template-name="comments/form">

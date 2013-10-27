@@ -1,8 +1,11 @@
 Blog.EntriesController = Ember.ArrayController.extend({
 	
+  needs: ['entry'],
+
 	itemController: 'entry',
 
 	init: function(controller) {
+    this.set('commentFormUntriggered', true);
 		this._super();
 		Ember.run.once(this, 'checkEntries');
 	},

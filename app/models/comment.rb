@@ -1,8 +1,7 @@
 class Comment < ActiveRecord::Base
-  attr_accessible :body, :first_name, :last_name
+  attr_accessible :body, :name, :entry_id
 
   belongs_to :entry
 
-  validates_presence_of :first_name,
-  	:body
+  validates_presence_of :body
 end

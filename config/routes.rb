@@ -14,6 +14,9 @@ Blog::Application.routes.draw do
   resources :entries, only: [:index],
     constraints: FormatTest.new(:json)
 
+  resources :comments, only: [:index, :create],
+    constraints: FormatTest.new(:json)
+
   get '*foo', to: 'ember#index', constraints: FormatTest.new(:html)
   get '/', to: 'ember#index', constraints: FormatTest.new(:html),
     constraints: lambda { |request|
