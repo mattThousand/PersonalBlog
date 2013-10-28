@@ -38,6 +38,12 @@ Blog.EntryRoute = Ember.Route.extend({
   }
 });
 
+Blog.CommentsRoute = Ember.Route.extend({
+  model: function() {
+    return this.modelFor('comments');
+  }
+});
+
 Blog.CommentsNewRoute = Ember.Route.extend({
   model: function(){
     return this.get('store').createRecord('comment');
@@ -49,6 +55,9 @@ Blog.CommentsNewRoute = Ember.Route.extend({
 
 Blog.CommentRoute = Ember.Route.extend({
   model: function(params) {
-    return this.get('store').find('comment', params.comment_id);
+    var comm = this.get('store').find('comment', params.comment_id);
+    this.get('store').filter('comment', function(comment){
+      return comment.get('entry_id') == comm.entry_id;
+    });
   }
 });

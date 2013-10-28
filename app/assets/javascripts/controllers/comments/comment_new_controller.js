@@ -17,7 +17,7 @@ Blog.CommentsNewController = Ember.ObjectController.extend({
       this.content.set('entry_id', entry_id);
 
       return this.content.save().then(function() {
-        return _this.transitionToRoute('entry');
+        return  _this.transitionToRoute('entry');
       });
     } 
   }

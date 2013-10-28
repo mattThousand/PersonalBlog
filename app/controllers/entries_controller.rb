@@ -6,5 +6,10 @@ class EntriesController < ApplicationController
 		render json: @entries,
     	each_serializer: EntrySerializer
 	end
+
+  def show
+    @entry = Entry.find(params[:id])
+    render json: @entry
+  end
 	
 end
