@@ -237,3 +237,19 @@ h3 a {
 .leave-a-comment {
   margin-left: 39%;
 }
+
+::-webkit-input-placeholder {
+ color: #2C0402;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #2C0402;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #2C0402;  
+}
+
+:-ms-input-placeholder {  
+  color: #2C0402;  
+}

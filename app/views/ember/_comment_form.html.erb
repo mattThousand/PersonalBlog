@@ -1,7 +1,7 @@
 <form class="new-comment">
-	{{textarea value='your comment...' name='body' classNames='comment-field form-control' valueBinding='body'}}
+	{{textarea value='your comment...' name='body' classNames='comment-field form-control' valueBinding='body' placeholder='your comment...'}}
   <br/>
-  {{input value='your name...' name='name' classNames='name-field form-control' valueBinding='name'}}
+  {{input value='your name...' name='name' classNames='name-field form-control' valueBinding='name' placeholder='your name...'}}
   <br/>
   {{#view Blog.CommentSubmissionView}}
     <a type="submit" href='#' class='comment-submit form-submit' {{action save}}>Post Comment</a>
