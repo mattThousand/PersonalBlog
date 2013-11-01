@@ -11,6 +11,7 @@ gem 'thin'
 gem 'active_model_serializers'
 
 group :development, :test do
+  gem 'launchy'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'qunit-rails' 

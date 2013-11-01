@@ -1,4 +1,7 @@
 Blog::Application.routes.draw do
+  
+  root to: 'ember#index'
+
   class FormatTest
     attr_accessor :mime_type
 
