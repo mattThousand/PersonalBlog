@@ -1,1 +1,1 @@
-This repo is where I keep the code for my personal blog.  I used Ember.js and Rails to build it, just 'cause.  I document my most radical learnings on the blog.
+This repo is where I keep the code for my personal blog(http://www.matt-buckley.com/entries).  I used Ember.js and Rails to build it, just 'cause.  I document my most radical learnings on this very blog.
