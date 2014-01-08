@@ -168,7 +168,7 @@ DEPENDENCIES
   jasmine
   jquery-rails
   launchy
-  newrelic_rpm (~> 3.5.5.38)
+  newrelic_rpm
   pg
   pry
   qunit-rails
