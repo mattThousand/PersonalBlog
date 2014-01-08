@@ -5,7 +5,8 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'newrelic_rpm'
+
+gem "newrelic_rpm", "~> 3.5.5.38"
 gem 'pg'
 gem 'zeus'
 gem 'thin'
