@@ -1,10 +1,5 @@
-<div id="portrait-mobile">
-	<div class="row-fluid">
-		<img class = "full" alt="half" src="../desert_pic_2.jpg">
-	</div>
-</div>
 <div class="row-fluid">
-	<div class="entries-index" class="desktop-only">
+	<div class="entries-index desktop-only">
 		<h2>Entries</h2>
 		{{#each entry in controller}}
     {{#linkTo 'entry' entry classNames=[entry-title]}}{{ entry.title }}{{/linkTo}} <a> - {{created_at}} </a><br/>
@@ -13,9 +8,21 @@
       {{#linkTo 'index'}}Home{{/linkTo}}
    </h3>
 	</div>
-	<div class="entries-container">
-		<div class="centered">
-			{{outlet}}
+	<div id="mobile_entries" class="entries-container">
+		<div class="desktop-only">
+			<div class="centered">
+				{{outlet}}
+			</div>
+		</div>
+		<div class="mobile-only">
+			{{#each entry in controller}}
+				<h1>{{title}}</h1>
+				<div class="entry-body-container-mobile">
+	      	{{{body}}}
+	      </div>
+      	<hr/>
+      	<br/>
+			{{/each}}
 		</div>
 	</div>
 </div>			

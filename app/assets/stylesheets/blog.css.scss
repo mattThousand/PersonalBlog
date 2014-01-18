@@ -65,7 +65,7 @@ p {
 	float:left;
 }
 
-div#bio {
+div#bio, #div#mobile_entries {
 	background-color: #E9AF32;
 	width: 45%;
 	height: auto;
@@ -120,6 +120,10 @@ img {
 	div#portrait-mobile {
 		display: none;
 	}
+
+	div.mobile-only {
+		display: none;
+	}
 }
 
 
@@ -128,6 +132,14 @@ img {
 	div#bio {
 		background-color: #E9AF32;
 		width: 100%;
+	}
+
+	div#mobile_entries {
+		width: 100%;
+	}
+
+	.desktop-only {
+		display: none;
 	}
 
 	div#portrait-desktop {
@@ -252,4 +264,8 @@ h3 a {
 
 :-ms-input-placeholder {  
   color: #2C0402;  
+}
+
+.entry-body-container-mobile {
+	padding: 10%;
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131027155913) do
+ActiveRecord::Schema.define(:version => 20131225173951) do
 
   create_table "comments", :force => true do |t|
     t.text     "body"
@@ -21,6 +21,21 @@ ActiveRecord::Schema.define(:version => 20131027155913) do
     t.string   "name"
   end
 
+  create_table "contacts", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "email"
+    t.string   "phone1"
+    t.string   "phone2"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+  end
+
   create_table "entries", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -28,27 +43,12 @@ ActiveRecord::Schema.define(:version => 20131027155913) do
     t.text     "body",       :null => false
   end
 
-  create_table "things", :force => true do |t|
-    t.string   "name"
-    t.datetime "birthday"
+  create_table "users", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "tweeters", :force => true do |t|
-    t.string   "handle"
-    t.string   "emotion"
-    t.string   "polarity"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "tweets", :force => true do |t|
-    t.string   "emotion"
-    t.string   "polarity"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "tweeter_id"
   end
 
 end
