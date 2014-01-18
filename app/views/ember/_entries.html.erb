@@ -15,14 +15,16 @@
 			</div>
 		</div>
 		<div class="mobile-only">
-			{{#each entry in controller}}
-				<h1>{{title}}</h1>
-				<div class="entry-body-container-mobile">
-	      	{{{body}}}
-	      </div>
-      	<hr/>
-      	<br/>
-			{{/each}}
+			<div class="centered">
+				{{#each entry in controller}}
+					<h1>{{title}}</h1>
+					<div class="entry-body-container-mobile">
+		      	{{{body}}}
+		      </div>
+	      	<hr/>
+	      	<br/>
+				{{/each}}
+			</div>
 		</div>
 	</div>
 </div>			
